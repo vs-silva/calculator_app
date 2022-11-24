@@ -4,13 +4,6 @@
     let calculatorButtonsContainer = null;
     let calculatorScreen = null;
 
-    const operands = {
-        addOperands: null,
-        subtractOperands: null,
-        multiplyOperands: null,
-        divideOperands: null
-    };
-
     function init(){
         if(!calculatorStructureData.length) {
             return;
@@ -51,7 +44,7 @@
                 //Todo: set attributes here!
 
                 button.addEventListener('click', () => {
-                    getValuesForCalculation({
+                    computeCalculation({
                         value: groupButton.value
                     });
                 });
@@ -63,30 +56,24 @@
         }
     }
 
-    function getValuesForCalculation({value}){
+    function computeCalculation({value}){
 
-        if(value === 'AC') {
-            calculatorScreen.innerText = '';
+        if(value.toString() === 'ac') {
+            calculatorScreen.innerHTML = '';
             return;
         }
 
-        if(value !== '=') {
-            calculatorScreen.innerText += value;
+        if(value.toString() !== '=') {
+            calculatorScreen.innerHTML += value;
+            return;
         }
 
-        if(value === '='){
-            buildCalculation({
-                formula: calculatorScreen.innerText
-            });
+        if(value.toString() === '=' ) {
+            const formula = calculatorScreen.innerHTML;
+            calculatorScreen.innerHTML = eval(formula);
         }
     }
 
-    function buildCalculation({formula}) {
-        const calculationFormula = formula;
-
-        console.log(formula);
-
-    }
 
     init();
 }(window));

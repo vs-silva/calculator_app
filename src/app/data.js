@@ -2,16 +2,19 @@
 
     Global.App.data = [
         [
+            {description: 'AC', value: 'ac'}
+        ],
+        [
             {description: '7', value: 7},
             {description: '8', value: 8},
             {description: '9', value: 9},
-            {description: '÷', value: '÷'},
+            {description: '÷', value: '/'},
         ],
         [
             {description: '4', value: 4},
             {description: '5', value: 5},
             {description: '6', value: 6},
-            {description: 'x', value: 'x'},
+            {description: 'x', value: '*'},
         ],
         [
             {description: '1', value: 1},
@@ -24,9 +27,6 @@
             {description: '.', value: '.'},
             {description: '=', value: '='},
             {description: '+', value: '+'},
-        ],
-        [
-            {description: 'AC', value: 'AC'}
         ]
     ];
 }(window));
