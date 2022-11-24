@@ -1,0 +1,137 @@
+html {
+    background: #b3cbeb;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+body {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainContainer {
+    box-shadow: 0 0 5px grey;
+    border: 1px solid gray;
+    width: 178px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#calculatorScreen{
+    overflow: hidden;
+}
+
+#calculatorButtonsContainer{
+    overflow: hidden;
+}
+
+.u-font-size-20-px {
+    font-size: 20px;
+}
+
+.u-text-align-right {
+    text-align: right;
+}
+
+.u-width-100-percent {
+    width: 100%;
+}
+.u-height-20-px {
+    height: 20px;
+}
+
+.u-background-color-white {
+    background-color: white;
+}
+
+.u-box-shadow-bottom-2px {
+    box-shadow: 0 2px 2px grey;
+}
+
+.u-padding-10px {
+    padding: 10px;
+}
+
+.u-margin-bottom-20px {
+    margin-bottom: 20px;
+}
+
+.u-button {
+    background: none;
+    padding: 10px 16px;
+    border: none;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+.u-button:hover {
+    background-color: lightgrey;
+}
+
+.button-class-clear {
+    width: 158px;
+    background-color: rgba(0,0,0, 20%);
+}
+
+.button-class-clear:hover {
+    background-color: rgba(0,0,0, 10%);
+}
+
+.button-class-equals {
+    color: white;
+    background-color: darkorange;
+    padding-left: 15px;
+    padding-right: 16px;
+}
+
+.button-class-equals:hover{
+    background-color: lightsalmon;
+}
+
+.button-class-plus {
+    color: white;
+    background-color: steelblue;
+}
+
+.button-class-minus {
+    color: white;
+    background-color: steelblue;
+    padding-left: 18px;
+    padding-right: 17px;
+}
+
+.button-class-division {
+    color: white;
+    background-color: steelblue;
+}
+
+.button-class-multiplication {
+    color: white;
+    background-color: steelblue;
+    padding-left: 16px;
+    padding-right: 17px;
+}
+
+.button-class-plus:hover {
+    background-color: skyblue;
+}
+
+.button-class-minus:hover {
+    background-color: skyblue;
+}
+
+.button-class-division:hover {
+    background-color: skyblue;
+}
+
+.button-class-multiplication:hover {
+    background-color: skyblue;
+}
+
+.button-class-decimal {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: bold;
+}
