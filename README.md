@@ -3,6 +3,9 @@ Basic calculator app in vanilla js
 
 ![calculatorapp](CalculatorApp_image.png)
 
+[Demo](https://vs-silva.github.io/calculator_app/)
+
+
 - All in browser
 - Vanilla JS ( no libraries or frameworks )
 - Single file responsibility
